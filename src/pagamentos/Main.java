@@ -1,5 +1,4 @@
-import pagamentos.PagamentoCartao;
-import pagamentos.PagamentoPix;
+package pagamentos;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +7,11 @@ public class Main {
 
         PagamentoPix p2 = new PagamentoPix(50.00);
         System.out.println(p2.exibirDetalhes());
+
+
+
+
+
 
     }
 
