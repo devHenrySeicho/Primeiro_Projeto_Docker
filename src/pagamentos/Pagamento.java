@@ -1,7 +1,7 @@
 package pagamentos;
 
 public abstract class Pagamento {
-    private Double valor;
+    public Double valor;
 
     public Pagamento(Double valor) {
         this.valor = valor;
