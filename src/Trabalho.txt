@@ -1,0 +1,36 @@
+Lista de Exercícios 2 : Abstração e Contratos em Java
+1.1 - Crie uma classe abstrata Pagamento com o atributo valor e um método
+abstrato exibirDetalhes().
+1.2 - Implemente as classes concretas PagamentoCartao (com o atributo
+numeroCartao) e PagamentoPix (com o atributo chavePix).
+1.3 - Garanta que cada classe implemente seu próprio exibirDetalhes() mostrando as
+informações específicas de cada uma.
+2.1 - Crie uma interface Sustentavel com o método double
+calcularPegadaCarbono().
+2.2 - Crie uma classe Eletronico que implemente tanto Tributavel quanto
+Sustentavel.
+2.3 - Implemente o cálculo da pegada de carbono (ex: precoBase * 0.05).
+3.1 - Crie uma classe abstrata Funcionario com os Atributos: nome e salarioBase.
+Método abstrato: double calcularVencimentos().
+3.2 - Implemente a classe Gerente: O vencimento é o salarioBase + um bônus fixo
+de R$ 2.000,00.
+3.3 - Implemente a classe Desenvolvedor: O vencimento é o salarioBase + 15% de
+bônus por produtividade.
+4.1 - Crie a interface Autenticavel com o método boolean login(String senha).
+4.2 - Faça a classe Funcionario (do exercício anterior) implementar essa interface. O
+login deve validar se a senha tem mais de 6 caracteres.
+4.3 - Crie uma classe TabletInventario (que não é um funcionário) que também
+implementa Autenticavel. O login deve validar um PIN numérico.
+4.4 - Crie um método chamado portaDaLoja(Autenticavel ser) que recebe qualquer
+objeto autenticável e imprime "Acesso Liberado" se o login for bem-sucedido. Note
+que a porta não sabe se quem está entrando é um gerente ou um tablet.
+
+5.1 - Crie uma interface Notificador com o método void enviar(String mensagem).
+
+5.2 - Crie duas implementações: WhatsAppNotificador e EmailNotificador.
+
+5.3 - Crie uma classe Pedido que possui um atributo do tipo Notificador (a interface,
+não a classe concreta).
+
+5.4 - Crie um método em Pedido chamado finalizarCompra(). Dentro dele, chame
+notificador.enviar("Seu pedido chegou!").
